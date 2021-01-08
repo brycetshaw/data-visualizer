@@ -1,0 +1,33 @@
+version: "2"
+
+services:
+  restapi:
+    build: ./restapi
+    image: ${REPOSITORY_URI}/restapi
+    container_name: restapi
+    ports:
+      - "4444:4000"
+    links:
+      - influxdb
+    depends_on:
+      - influxdb
+
+  webapp:
+    build: ./webapp
+    image: ${REPOSITORY_URI}/webapp
+    container_name: webapp
+    ports:
+      - "80:80"
+    links:
+      - restapi
+
+  influxdb:
+    image: influxdb:alpine
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+  load_data:
+    container_name: load_data
+    build: ./influxdb/load_data
+    depends_on:
+      - influxdb

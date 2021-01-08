@@ -1,0 +1,63 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.50",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "cypress": "^6.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-functional": "^3.0.1",
+    "eslint-plugin-react": "^7.20.3",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^4.0.1",
+    "@reduxjs/toolkit": "^1.4.0",
+    "@types/lodash": "^4.14.165",
+    "@types/react-redux": "^7.1.11",
+    "@types/recharts": "^1.8.16",
+    "@types/redux-pack": "^0.1.5",
+    "antd": "^4.4.2",
+    "dayjs": "^1.9.5",
+    "dexie": "^3.0.2",
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.2",
+    "react-scripts": "3.4.1",
+    "recharts": "^1.8.5",
+    "redux": "^4.0.5",
+    "redux-pack": "^0.1.5",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "cypress": "cypress open",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prettier": "prettier --write src"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
