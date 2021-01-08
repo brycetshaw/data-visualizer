@@ -15,7 +15,7 @@
         },
         {
             "essential": true,
-            "image": "285091344673.dkr.ecr.us-west-2.amazonaws.com/restapi:latest",
+            "image": "xxx.dkr.ecr.us-west-2.amazonaws.com/restapi:latest",
             "memory": 128,
             "links": [
                 "influxdb"
@@ -24,7 +24,7 @@
         },
         {
             "essential": true,
-            "image": "285091344673.dkr.ecr.us-west-2.amazonaws.com/webapp:latest",
+            "image": "xxx.dkr.ecr.us-west-2.amazonaws.com/webapp:latest",
             "memory": 128,
             "links": [
                 "restapi"

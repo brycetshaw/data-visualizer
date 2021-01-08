@@ -6,7 +6,7 @@ phases:
       - $(aws ecr get-login --no-include-email --region us-west-2)
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
-      - REPOSITORY_URI=285091344673.dkr.ecr.us-west-2.amazonaws.com
+      - REPOSITORY_URI=xxx.dkr.ecr.us-west-2.amazonaws.com
 #       These lines create Repositories if they don't exist... but they nuke the build if they already exist.
 #      - chmod +x ./createRepositories.sh
 #      - ./createRepositories.sh
