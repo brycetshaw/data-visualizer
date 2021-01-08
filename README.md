@@ -1,6 +1,6 @@
 # Data Explorer
 
-This project serves and displayes timeseries data. 
+This project serves and displays timeseries data. 
 
 This project is built using react for frontend view, redux 
 For state management. 
